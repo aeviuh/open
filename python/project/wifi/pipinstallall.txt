@@ -1,0 +1,4 @@
+# pip install all
+pip install pywifi -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+# windows11系统还需执行:
+pip install comtypes -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com

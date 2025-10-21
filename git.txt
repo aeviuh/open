@@ -1,0 +1,9 @@
+# linux系统上下载(Ubuntu)
+sudo apt-get install git
+
+# linux和windows上配置名字和邮箱
+git config --global user.name "aeviih"
+git config --global user.email "aeviih@qq.com"
+
+# linux和windows上查询名字与邮箱配置
+git config --global --list

@@ -1,0 +1,8 @@
+# pip install all
+pip install pyautogui -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+pip install pyperclip -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+pip install Pillow -i https://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+"""
+sudo apt install gnome-screenshot
+sudo apt-get install xclip
+"""

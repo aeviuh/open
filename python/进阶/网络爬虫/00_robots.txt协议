@@ -1,0 +1,9 @@
+robots.txt协议:
+robots.txt
+君子协议,规定了网站中的哪些内容可以被搜索引擎抓取,哪些内容不可以被搜索引擎抓取.
+
+User-agent: * # 表示所有的搜索引擎
+Disallow: / # 表示所有的内容都不可以被搜索引擎抓取
+Allow: / # 表示所有的内容都可以被搜索引擎抓取
+
+User-agent: Googlebot # 表示Googlebot搜索引擎

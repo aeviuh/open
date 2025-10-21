@@ -1,0 +1,7 @@
+START TRANSACTION;# 开启事务
+BEGIN;# 开启事务
+SELECT @@autocommit;# 查看事务提交方式
+SET @@autocommit=0;# 设置事务提交方式-手动
+SET @@autocommit=1;# 设置事务提交方式-自动
+COMMIT;# 提交事务
+ROLLBACK;# 回滚事务

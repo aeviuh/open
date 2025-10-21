@@ -1,0 +1,17 @@
+win+E->此电脑
+win+D->桌面
+win+V->剪辑版
+win+Tab->任务视图
+win+L->锁屏
+win+I->设置
+win+X->部分高级设置
+win+S->win搜索
+
+win+ctrl+D->创建虚拟桌面
+win+ctrl+方向左右->切换桌面
+
+ctrl+shift+N->新建文件夹
+ctrl+shift+Esc->任务管理器
+
+win+r:
+    calc->计算器

@@ -1,0 +1,5 @@
+// 接口用interface关键字定义:public interface 接口名{};
+// 接口不能实例化
+// 接口和类是实现关系,通过implements关键字表示:public class 类名 implements 接口名{}
+    // public class 类名 extends 父类 implements 接口名1,接口名2{}
+// 接口的子类要么抽象,要么重写所有接口的方法

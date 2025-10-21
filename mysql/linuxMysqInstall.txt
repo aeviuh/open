@@ -1,0 +1,20 @@
+sudo apt update# 更新软件源
+sudo apt install mysql-server# 安装
+mysql --version# 查看版本
+sudo systemctl status mysql# 查看运行状态
+netstat -tln# 以数字ip形式显示mysql的tcp监听状态
+sudo mysql -u root# 使用root无密码登录
+alter user 'root'@'localhost' identified with mysql_native_password by '123456';# 为root添加密码
+exit;
+mysql -u root -p# 使用root有密码登录
+use mysql;  # 使用名为mysql的数据库
+update user set host='%' where user='root';# 运行root远程登录
+flush privileges;  # 权限刷新
+exit;
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+修改bind-address = 0.0.0.0
+修改后重启：sudo systemctl restart mysql
+
+# 使用主机连接测试
+mysql -u root -p -h 192.168.1.100（ip替换为实际MySQL服务器ip）
+

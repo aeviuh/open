@@ -1,0 +1,4 @@
+# 打开linux上x服务,x服务提升执行权限,对键鼠控制,或者直接sudo
+xhost +local:
+# 关闭linux上x服务
+xhost -local:

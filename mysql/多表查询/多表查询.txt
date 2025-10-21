@@ -1,0 +1,20 @@
+# 查询结果会以笛卡尔积的形式呈现
+
+selsct * from 表1,表2,表3;
+
+selsct * from 表1,表2,表3 [where 条件];
+
+#隐式内连接
+SELECT 字段列表 FROM 表1,表2 WHERE 条件 ...;
+
+#显式内连接
+SELECT 字段列表 FROM 表1 [INNER] JOIN 表2 ON 连接条件 ...;
+
+#左外连接
+SELECT 字段列表 FROM 表1 LEFT [OUTER] JOIN 表2 ON 条件 ...;
+
+#右外连接
+SELECT 字段列表 FROM 表1 RIGHT [OUTER] JOIN 表2 ON 条件 ...;
+
+#自连接(必须有别名)
+SELECT 字段列表 FROM 表A 别名A JOIN 表A 别名B ON 条件 ...;

@@ -1,0 +1,10 @@
+# (主机名可以用%通配)
+USE mysql;#查询用户
+SELECT * FROM user;
+CREATE USER ' 用户名 '@' 主机名 ' IDENTIFIED BY ' 密码 ';#创建用户
+ALTER USER ' 用户名 '@' 主机名 ' IDENTIFIED WITH mysql_native_password BY ' 新密码 ';#修改用户密码
+DROP USER ' 用户名 '@' 主机名 ';#删除用户
+# (数据库和表名可以用*通配)
+SHOW GRANTS FOR ' 用户名 '@' 主机名 ';#查询权限
+GRANT 权限列表 ON 数据库名.表名 TO ' 用户名 '@' 主机名 ';#授予权限
+REVOKE 权限列表 ON 数据库名.表名 FROM ' 用户名 '@' 主机名 ';#撤销权限

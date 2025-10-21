@@ -1,0 +1,61 @@
+command [-options][parameter]
+command --help
+man command # 功能键: 回车 空格 b q
+
+> # 重定向覆盖
+>> # 重定向追加
+
+. # 当前目录
+.. # 上一级目录
+- # 上一次访问点目录
+~ # 当前用户目录
+
+| # 管道符
+
+* # 通配符 匹配0-n个字符
+? # 通配符 匹配一个字符
+
+ls [-a#包括以.开头的文件 -l#以列表形式 -h#智能显示文件大小] # 列出当前目录
+tree [] # 以树的方式列出目录
+pwd # 显示当前绝对路径
+clear # 清空终端内容
+cd [路径] # 用于切换操作的目录
+touch [文件名] # 创建文件
+mkdir [目录名] # 创建目录
+rm [文件名] [-r#递归删除 -i#交互 -f]# 删除文件
+rmdir [目录名] # 删除空目录
+cp # 拷贝
+mv # 移动 # 重命名
+
+cat [文件名] # 查看小文件 # 功能键: 回车 b f q
+more # 查看大文件
+
+ln [-s] [目标文件] [软名称] # 创建软连接
+
+grep [-v取反 -n#显示行号 -i#忽略大小写] # 查找文件内容
+find [路径] [-name#以文件名称的方式查找] ["文件名称"]# 查找文件命令
+
+tar [-c -v -f -z -j -x -C] [操作的文件] [目标文件]# 压缩与解压缩
+
+chomd [u g o a] [+ - =] [文件名] # 文件权限修改 字母方法
+chomd [xxx] [文件名]# 文件权限修改 数字方法4 2 1 0
+
+sudo # root权限
+sudo -s # 切换到root用户 执行exit退出
+whoami # 我是谁?
+who # 显示所有当前登陆的用户
+passwd # 更改密码,默认指定当前登陆的用户
+
+which [命令] # 查看命令位置
+
+shutdown -h now # 立即关机
+reboot # 重启
+
+ssh # 远程登陆
+scp # 远程拷贝
+
+sudo dpkg -i [deb安装包] # Ubuntu安装deb软件命令
+sudo apt-get install [安装包] #在线安装deb软件
+sudo dpkg -r [deb安装包名] # 卸载软件
+sudo apt-get remove [安装包名] # 卸载软件
+

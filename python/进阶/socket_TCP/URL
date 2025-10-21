@@ -1,0 +1,29 @@
+网址,又称URL(Uniform Resource Locator)
+
+URL的组成:
+
+协议部分://域名部分/资源路径部分?参数部分#锚点部分
+https://www.baidu.com/baidu?ie=utf-8&wd=hello
+
+协议部分:
+    用于指定访问资源的协议
+    http://
+    https://
+    ftp://
+
+域名部分:
+    方便记录某台计算机的IP地址
+    www.baidu.com
+
+资源路径部分:
+    /index.html
+    /css/index.css
+
+参数部分:
+    用于传递参数给服务器
+    ?username=tom
+    ?username=tom&age=18&hobby=reading
+
+锚点部分:
+    用于指定页面中的位置
+    #top

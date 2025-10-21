@@ -1,0 +1,25 @@
+#DCL - 管理用户(主机名可以用%通配)
+
+#查询用户
+USE mysql;
+SELECT * FROM user;
+
+#创建用户
+CREATE USER ' 用户名 '@' 主机名 ' IDENTIFIED BY ' 密码 ';
+
+#修改用户密码
+ALTER USER ' 用户名 '@' 主机名 ' IDENTIFIED WITH mysql_native_password BY ' 新密码 ';
+
+#删除用户
+DROP USER ' 用户名 '@' 主机名 ';
+
+#DCL - 权限控制(数据库和表名可以用*通配)
+
+#查询权限
+SHOW GRANTS FOR ' 用户名 '@' 主机名 ';
+
+#授予权限
+GRANT 权限列表 ON 数据库名.表名 TO ' 用户名 '@' 主机名 ';
+
+#撤销权限
+REVOKE 权限列表 ON 数据库名.表名 FROM ' 用户名 '@' 主机名 ';

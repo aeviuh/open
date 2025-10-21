@@ -1,0 +1,5 @@
+# win+r
+# 输入:
+# services.msc
+# 找到mysql80服务
+# 右击运行或停止

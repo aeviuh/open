@@ -1,0 +1,3 @@
+create index k on a (a1);# 在表a的a1列上创建名为k的索引
+create index k on b (b1);# 在表b的b1列上创建名为k的索引
+alter table b add constraint k foreign key (b1) references a (a1) on update cascade on delete set null;# 为表b添加了一个外键约束,约束名为k

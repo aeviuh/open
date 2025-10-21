@@ -1,0 +1,3 @@
+# 以管理员方式运行命令提示符
+net start mysql80# 启动
+net stop mysql80# 停止

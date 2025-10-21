@@ -1,0 +1,43 @@
+create index a on a (a1);
+
+create index a on b (b1);
+
+alter table b add constraint a foreign key (b1) references a (a1) on update cascade on delete set null;
+--------------------------------------------------------------------------------------------------------------------------
+下面为你详细解释这三条 SQL 语句：
+
+create index a on a (a1);
+此语句的作用是在表a的a1列上创建名为a的索引。索引的创建能够极大地加快基于a1列的查询速度。不过要留意，在 MySQL 里，索引名和表名不允许重复，所以这个命名在实际操作中是无效的。
+
+create index a on b (b1);
+该语句是在表b的b1列上创建名为a的索引。和上面提到的一样，由于索引名重复，在 MySQL 环境下这是不被允许的。一般而言，外键列都需要创建索引，这样可以有效提升连接操作的性能。
+
+alter table b add constraint a foreign key (b1) references a (a1) on update cascade on delete set null;
+这条语句为表b添加了一个外键约束，约束名为a。它规定了b表的b1列必须引用a表的a1列。
+
+on update cascade：当a表中a1列的值被更新时，b表中对应的b1值会自动跟着更新。
+
+on delete set null：若a表中的某条记录被删除，b表中对应记录的b1值会被自动设为NULL。不过，要使这个设置生效，b1列必须被定义为允许NULL值。
+
+存在的问题
+索引名重复：在同一个数据库里，索引名不能重复，即便它们属于不同的表。
+约束名重复：在同一个表中，约束名也不能重复。
+命名不规范：通常不会使用同一个名字来命名索引和约束。
+
+修正建议
+sql
+-- 为表a的a1列创建索引，合理命名为idx_a_a1
+create index idx_a_a1 on a (a1);
+s
+-- 为表b的b1列创建索引，合理命名为idx_b_b1
+create index idx_b_b1 on b (b1);
+
+-- 为表b添加外键约束，合理命名为fk_b_a
+alter table b add constraint fk_b_a foreign key (b1) references a (a1) 
+on update cascade on delete set null;
+
+
+修正说明
+把索引名修改为idx_表名_列名的格式，这样更符合命名规范。
+将约束名改为fk_从表_主表的格式，增强可读性。
+要保证b.b1列允许为NULL，不然on delete set null操作会失败。

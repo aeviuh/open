@@ -1,0 +1,9 @@
+SELECT 字段 1, 字段 2, 字段 3... FROM 表名;# 查询多个字段
+SELECT * FROM 表名;# 查询全部字段
+SELECT 字段 1 [AS 别名 1], 字段 2 [AS 别名 2] ... FROM 表名;# 设置别名
+SELECT DISTINCT 字段列表 FROM 表名;#去除重复记录
+SELECT 字段列表 FROM 表名 WHERE 条件列表;# 条件查询
+SELECT 聚合函数 (字段列表) FROM 表名;# 聚合函数
+SELECT 字段列表 FROM 表名 [WHERE 条件] GROUP BY 分组字段名 [HAVING 分组后过滤条件];# 分组查询
+SELECT 字段列表 FROM 表名 ORDER BY 字段 1 排序方式 1, 字段 2 排序方式 2;# 排序查询
+SELECT 字段列表 FROM 表名 LIMIT 起始索引，查询记录数;# 分页查询

@@ -1,0 +1,6 @@
+sudo systemctl start mysql# 启动 MySQL 服务
+sudo systemctl stop mysql# 停止 MySQL 服务
+sudo systemctl restart mysql# 重启 MySQL 服务
+sudo systemctl status mysql# 查看 MySQL 服务状态
+sudo systemctl enable mysql# 设置 MySQL 服务开机自启
+sudo systemctl disable mysql# 禁止 MySQL 服务开机自启

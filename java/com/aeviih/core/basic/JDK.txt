@@ -1,0 +1,23 @@
+JDK(java开发工具包,包含核心类库,开发工具,JVM...):
+    bin:该路径下存放了各种工具命令.其中比较重要的有:javac和java
+    conf:该路径下存放了相关配置文件
+    include:该路径下存放了一些平台特定的头文件
+    jmods:该路径下存放了各种模块
+    legal:该路径下存放了各模块的授权文档
+    lib:该路径下存放了工具的一些补充IAR包
+
+javac:该程序用来编译(.java)文件,编译后产生(.class文件)
+java:该程序执行(.class文件)
+
+JDK包含:
+    开发工具(javac编译工具,java运行工具,jdb调试工具,jhat内存分析工具...)
+    JVM(java虚拟机,代码真正运行的位置)
+    核心类库(Java已经写好的东西,我们可以直接用)
+
+JDK包含JRE
+JRE包含JVM
+
+JRE(java运行环境):
+    JVM
+    核心类库
+    运行工具
